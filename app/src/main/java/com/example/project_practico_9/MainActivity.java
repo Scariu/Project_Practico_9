@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         ImageButton boton2 = findViewById(R.id.button2);
         ImageButton boton3 = findViewById(R.id.button3);
         ImageButton boton4 = findViewById(R.id.button4);
-
+        Button botonSalir = findViewById(R.id.buttonSalir);
         boton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,8 +55,13 @@ public class MainActivity extends AppCompatActivity {
                 moveToSecondActivity(imagen4);
             }
         });
-    }
-
+       botonSalir.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            finish();
+        }
+    });
+}
     public void moveToSecondActivity(int imagen) {
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
         intent.putExtra("Clave", imagen);

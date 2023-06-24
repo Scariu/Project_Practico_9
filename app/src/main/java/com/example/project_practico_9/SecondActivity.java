@@ -27,7 +27,7 @@ public class SecondActivity extends AppCompatActivity {
 
     private void initListeners() {
         Button botonBack = findViewById(R.id.buttonBack);
-        Button botonSalir = findViewById(R.id.buttonSalir);
+
         botonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,11 +36,6 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
 
-        botonSalir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                System.exit(0);
-            }
-        });
+
     }
 }
