@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,32 +32,33 @@ public class MainActivity extends AppCompatActivity {
         boton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                moveToSecondActivity();
+                moveToSecondActivity(imagen1);
             }
         });
 
         boton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                moveToSecondActivity();
+                moveToSecondActivity(imagen2);
             }
         });
         boton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                moveToSecondActivity();
+                moveToSecondActivity(imagen3);
             }
         });
         boton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                moveToSecondActivity();
+                moveToSecondActivity(imagen4);
             }
         });
     }
 
-    public void moveToSecondActivity() {
+    public void moveToSecondActivity(int imagen1) {
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+        intent.putExtra("Clave",imagen1);
         startActivity(intent);
     }
 }
