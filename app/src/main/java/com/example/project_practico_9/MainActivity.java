@@ -56,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void moveToSecondActivity(int imagen1) {
+    public void moveToSecondActivity(int imagen) {
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-        intent.putExtra("Clave",imagen1);
+        intent.putExtra("Clave",imagen);
         startActivity(intent);
     }
 }
