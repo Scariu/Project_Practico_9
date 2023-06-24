@@ -17,8 +17,8 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         initListeners();
-       Intent intentGet = getIntent();
-       int idImage = intentGet.getIntExtra("Clave", 0);
+        Intent intentGet = getIntent();
+        int idImage = intentGet.getIntExtra("Clave", 0);
         Log.d("Second Activity", String.valueOf(idImage));
 
         ImageView imageButton = findViewById(R.id.imageView);
