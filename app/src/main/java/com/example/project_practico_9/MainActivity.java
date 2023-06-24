@@ -10,12 +10,18 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
+    int imagen1 = R.drawable.ic_launcher_foreground;
+    int imagen2 = R.drawable.flor2;
+    int imagen3 = R.drawable.flor1;
+    int imagen4 = R.drawable.ic_launcher_background;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         initListeners();
+
     }
 
     private void initListeners() {

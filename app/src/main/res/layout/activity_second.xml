@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#96CF54"
     tools:context=".SecondActivity">
 
     <Button
@@ -15,6 +16,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="270dp"
+        android:layout_height="311dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.53" />
+        app:layout_constraintVertical_bias="0.207"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
 </androidx.constraintlayout.widget.ConstraintLayout>
